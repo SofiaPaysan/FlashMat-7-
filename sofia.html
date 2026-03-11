@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>FlashMat – Flashcards de Matemática (7º Ano)</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:linear-gradient(135deg,#7b2cbf,#9d4edd,#c77dff);
+min-height:100vh;
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+h1{
+color:white;
+margin-top:40px;
+text-align:center;
+}
+
+.container{
+width:85%;
+max-width:1100px;
+margin-top:40px;
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:35px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+padding:18px;
+box-shadow:0 6px 14px rgba(0,0,0,0.2);
+font-size:14px;
+line-height:1.4;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+min-height:180px;
+}
+
+.card p{
+margin-bottom:10px;
+font-weight:bold;
+}
+
+button{
+background:#2ecc71;
+border:none;
+padding:8px;
+border-radius:8px;
+color:white;
+cursor:pointer;
+font-weight:bold;
+margin-top:10px;
+}
+
+button:hover{
+background:#27ae60;
+}
+
+.resposta{
+display:none;
+margin-top:10px;
+font-size:13px;
+background:#f4f4f4;
+padding:8px;
+border-radius:8px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>FlashMat – Flashcards de Matemática (7º Ano)</h1>
+
+<div class="container">
+
+<div class="card">
+<p>Em uma excursão escolar, um ônibus transporta 42 alunos. Se 3 ônibus iguais forem usados, quantos alunos serão transportados?</p>
+<button onclick="mostrar(this)">Ver explicação</button>
+<div class="resposta">
+<b>Resposta:</b> 126 alunos<br><br>
+Cada ônibus leva 42 alunos.<br>
+42 × 3 = 126 alunos.
+</div>
+</div>
+
+<div class="card">
+<p>Uma loja deu 20% de desconto em um tênis de R$200. Qual foi o valor do desconto?</p>
+<button onclick="mostrar(this)">Ver explicação</button>
+<div class="resposta">
+<b>Resposta:</b> R$40<br><br>
+20% de 200 = 0,20 × 200 = 40.
+</div>
+</div>
+
+<div class="card">
+<p>Um jogo custa R$60. Sofia pagou com uma nota de R$100. Quanto ela recebe de troco?</p>
+<button onclick="mostrar(this)">Ver explicação</button>
+<div class="resposta">
+<b>Resposta:</b> R$40<br><br>
+100 − 60 = 40.
+</div>
+</div>
+
+<div class="card">
+<p>Uma pizza foi dividida em 8 pedaços. João comeu 3 pedaços. Que fração da pizza ele comeu?</p>
+<button onclick="mostrar(this)">Ver explicação</button>
+<div class="resposta">
+<b>Resposta:</b> 3/8<br><br>
+Foram 3 pedaços de um total de 8.
+</div>
+</div>
+
+<div class="card">
+<p>Se 4 cadernos custam R$32, quanto custa 1 caderno?</p>
+<button onclick="mostrar(this)">Ver explicação</button>
+<div class="resposta">
+<b>Resposta:</b> R$8<br><br>
+32 ÷ 4 = 8.
+</div>
+</div>
+
+<div class="card">
+<p>Resolva a equação: x + 7 = 15</p>
+<button onclick="mostrar(this)">Ver explicação</button>
+<div class="resposta">
+<b>Resposta:</b> x = 8<br><br>
+15 − 7 = 8.
+</div>
+</div>
+
+<div class="card">
+<p>Um filme dura 120 minutos. Quantas horas isso representa?</p>
+<button onclick="mostrar(this)">Ver explicação</button>
+<div class="resposta">
+<b>Resposta:</b> 2 horas<br><br>
+120 ÷ 60 = 2.
+</div>
+</div>
+
+<div class="card">
+<p>Uma prova tem 20 questões. Um aluno acertou 15. Qual porcentagem ele acertou?</p>
+<button onclick="mostrar(this)">Ver explicação</button>
+<div class="resposta">
+<b>Resposta:</b> 75%<br><br>
+15 ÷ 20 = 0,75 = 75%.
+</div>
+</div>
+
+<div class="card">
+<p>Resolva: 3 + 5 × 2</p>
+<button onclick="mostrar(this)">Ver explicação</button>
+<div class="resposta">
+<b>Resposta:</b> 13<br><br>
+Primeiro multiplicação:<br>
+5 × 2 = 10<br>
+3 + 10 = 13.
+</div>
+</div>
+
+<div class="card">
+<p>Uma garrafa tem 2 litros de suco. Quantos mililitros isso representa?</p>
+<button onclick="mostrar(this)">Ver explicação</button>
+<div class="resposta">
+<b>Resposta:</b> 2000 ml<br><br>
+1 litro = 1000 ml.<br>
+2 × 1000 = 2000.
+</div>
+</div>
+
+</div>
+
+<script>
+
+function mostrar(botao){
+
+let resposta = botao.nextElementSibling;
+
+if(resposta.style.display === "block"){
+resposta.style.display = "none";
+}else{
+resposta.style.display = "block";
+}
+
+}
+
+</script>
+
+</body>
+</html>
